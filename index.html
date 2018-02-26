@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Seattle Automotive Distributing</title>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/tablesort-5.0.2/src/tablesort.js"></script>
+        <script src="js/tablesort-5.0.2/src/sorts/tablesort.number.js"></script>
+        <script>
+            $( function() {
+                $( "#fluid_pricing" ).tabs({
+                beforeLoad: function( event, ui ) {
+                    ui.jqXHR.fail(function() {
+                    ui.panel.html(
+                        "Couldn't load this tab. We'll try to fix this as soon as possible."
+                    );
+                    });
+                }
+                });
+            } );
+        </script>
     </head>
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                One of three columns
+        <div class="w3-row">
+            <div id="left_spacer" class="w3-col l2 w3-hide-medium w3-hide-small">
+                <br>
+            </div>
+            <div class="w3-col l8 m12 s12">
+                <div class="w3-row" style="padding:10px 10px 0px 10px">
+                    <div id="header_content" class="w3-border" style="padding:10px 10px 10px 0px">
+                        <img src="images/logo.png">
+                    </div>
                 </div>
-                <div class="col-10">
-                One of three columns
+                <div class="w3-row">
+                    <div class="w3-col w3-right w3-hide-small" style="width:250px;padding:10px 10px 0px 0px">
+                        <div id="sidebar_content" class="w3-border">
+                            <br>
+                        </div>
+                    </div>
+                    <div id="main_content" class="w3-rest" style="padding:10px 10px 10px 10px">
+                        <div id="fluid_pricing" class="w3-hide-small">
+                            <ul>
+                                <li><a href="modules/acdelco_fluids.html">ACDelco</a></li>
+                                <li><a href="modules/motorcraft_fluids.html">Motorcraft</a></li>
+                                <li><a href="modules/federated_fluids.html">Federated</a></li>
+                                <li><a href="modules/oem_coolants.html">OEM Coolants</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                One of three columns
-                </div>
+            </div>
+            <div id="right_spacer" class="w3-col l2 w3-hide-medium w3-hide-small">
+                <br>
             </div>
         </div>
     </body>

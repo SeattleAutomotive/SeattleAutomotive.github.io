@@ -1,0 +1,40 @@
+<table id="acdelco_fluids" class="w3-table-all w3-small">
+</table>
+<script>
+    var acdelco_fluids = [
+        //Data Type
+        ["number", "", "", "number", "number"],
+        //Table Header
+        ["Part Number","UOM","Type","Weight","Price"],
+        //Table Rows
+        ["10-9145","5 Quart","Synthetic Blend","SAE 5W30 API SN/SM","$10.99"],
+        ["10-9146","5 Quart","Synthetic Blend","SAE 5W20 API SN/SM","$10.99"],
+        ["10-9148","5 Quart","Synthetic dexos1","SAE 0W20","$17.99"],
+        ["10-9200","Quart","Synthetic Blend","SAE 5W30 API SN/SM","$2.29"],
+        ["10-9201","Drum","Synthetic Blend","SAE 5W30 API SN/SM","$459.00"],
+        ["10-9202","Quart","Conventional","SAE 10W30 API SN/SM","$2.29"],
+        ["10-9203","Drum","Conventional","SAE 10W30 API SN/SM","$459.00"],
+        ["10-9204","Quart","Conventional","SAE 10W40 API SN/SM","$2.29"],
+        ["10-9206","Quart","Conventional","SAE 20W50 API SN/SM","$2.29"],
+        ["10-9208","Quart","Synthetic Blend","SAE 5W20 API SN/SM","$2.29"],
+        ["10-9209","Drum","Synthetic Blend","SAE 5W20 API SN/SM","$469.00"],
+        ["10-9213","Quart","Diesel","SAE 15W40 API CK-4","$2.59"],
+        ["10-9214","Gallon","Diesel","SAE 15W40 API CK-4","$10.99"],
+        ["10-9215","Drum","Diesel","SAE 15W40 API CK-4","$549.00"],
+        ["10-9220","Quart","Synthetic Blend High Mileage","SAE 5W30 API SN/SM","$2.99"],
+        ["10-9222","Quart","Synthetic Blend High Mileage","SAE 10W30 API SN/SM","$2.99"],
+        ["10-9226","Quart","Synthetic Blend High Mileage","SAE 5W20 API SN/SM","$2.99"],
+        ["10-9233","Drum","Synthetic dexos1","SAE 0W20","$729.00"],
+        ["10-9234","Quart","Synthetic dexos1","SAE 5W30","$3.49"],
+        ["10-9235","Drum","Synthetic dexos1","SAE 5W30","$629.00"],
+        ["10-9236","Quart","Synthetic dexos1","SAE 0W20","$3.99"],
+        ["10-9240","Quart","Conventional ATF Type III(H)","ATF","$2.29"],
+        ["10-9241","Gallon","Conventional ATF Type III(H)","ATF","$8.99"],
+        ["10-9242","Drum","Conventional ATF Type III(H)","ATF","$479.00"],
+        ["10-9243","Quart","Synthetic Dexron VI ATF","ATF","$3.99"],
+        ["10-9244","Gallon","Synthetic Dexron VI ATF","ATF","$13.99"],
+        ["10-9245","Drum","Synthetic Dexron VI ATF","ATF","$759.00"]
+    ];
+    MakeTable("acdelco_fluids", acdelco_fluids);
+    new Tablesort(document.getElementById('acdelco_fluids'));
+</script>

@@ -1,0 +1,19 @@
+/* JQuery UI Overrides 
+.ui-tabs-panel {
+    padding:1px !important;
+}
+.ui-tabs-nav {
+    padding:1px !important;
+}
+.ui-widget-header{
+    border:none !important;
+    border-bottom: 1px solid #dddddd !important;
+    background:none !important;
+}*/
+
+.ui-tabs-panel {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    padding-bottom: 1px !important;
+    padding-top: 10px !important;
+}
